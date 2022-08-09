@@ -7,3 +7,5 @@
 
 ### Liguagem escolhida para desenvolver: Javascript
 ### Motivo: Maior afinidade, por atuar com ela
+
+<p> Link para projeto em execução: https://resilient-taffy-88696e.netlify.app/ </p>
