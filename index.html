@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Test Raffinato</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="entradas">
+            <div class="texto">
+                <p>Valor do tamanho do buraco <span class="alturaBuraco"></span> cm</p>
+                <p>Valor do tamanho da subida <span class="subida"></span> cm</p>
+                <p>Valor do tamanho da queda <span class="queda"></span> cm</p>
+            </div>
+    
+            <input type="number" name="alturaBuraco" id="alturaBuraco" placeholder="Altura do buraco" value="">
+            <input type="number" name="subida" id="subida" placeholder="Avanco da minhoca" value="">
+            <input type="number" name="queda" id="queda" placeholder="Queda da minhoca" value="">
+    
+            <button onclick="redefinirValores()">Redefinir</button>
+            <button onclick="iniciar()">Iniciar</button>
+            <div class="alerta">
+                <div class="meioBuraco"> Passou da metade <br> em <span></span> subidas</div>
+                <div class="fimBuraco">Chegou lá <br> em <span></span> subidas</div>
+            </div>
+        </div>
+    
+        <div class="buraco">
+            <div id="minhoca">
+                <img src="./assets/minhoca.png" alt="">
+            </div>
+        </div>
+    
+        <div class="regua">
+            <span class="linha"></span>
+            <p>Regua <span class="alturaBuraco"></span> cm</p>
+            <span class="linha"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

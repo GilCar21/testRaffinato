@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(30, 26, 34);
+    color: #ccc;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+    max-width: 1450px;
+}
+
+.entradas{
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+input{
+    background: transparent;
+    color: #ccc;
+    padding: .3rem .75rem;
+    border: 1px solid rgb(76, 245, 9);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-weight: bold;
+    background: rgb(35, 93, 158);
+    color: #ccc;
+    padding: .3rem .75rem;
+    border: 1px solid rgb(76, 245, 9);
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buraco{
+    display: flex;
+    align-items: flex-end;
+    height: 60vh;
+    border: solid 4px rgb(25, 22, 212);
+    border-radius: 0 0 30px 30px;
+    border-top: none;
+}
+
+.regua{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 0;
+    height: 60vh;
+}
+
+.regua .linha{
+    height: 100%;
+    width: 1px;
+    background: rgb(35, 93, 158);
+}
+
+#minhoca{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: block;
+    transition: all .3s;
+}
+
+#minhoca img{
+    width: 50px;
+    height: 50px;
+}
+
+.alerta{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alerta .meioBuraco{
+    text-align: center;
+    background: yellow;
+    color: black;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border: solid 1px black;
+    border-radius: 8px;
+    display: none;
+}
+
+.alerta .fimBuraco{
+    text-align: center;
+    background: rgb(76, 245, 9);
+    color: black;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border: solid 1px black;
+    border-radius: 8px;
+    display: none;
+}
+
+.alerta .meioBuraco.active{
+    display: block;
+}
+
+.alerta .fimBuraco.active{
+    display: block;
+}
